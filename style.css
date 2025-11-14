@@ -1,0 +1,85 @@
+body {
+    background-color: #F45422;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: black;
+    text-align: center;
+    padding-bottom: 60px; /* Add padding to avoid footer overlap */
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.company-name h1 {
+    font-size: 4em; /* Larger for company name */
+    margin-bottom: 0.2em;
+}
+
+h2 {
+    font-size: 2.5em; /* Slightly smaller for "Coming Soon" */
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.2em;
+    color: black; /* Ensure paragraph text is black */
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    animation: crack 2s infinite alternate;
+}
+
+@keyframes crack {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-5px) translateY(-5px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(5px) translateY(5px) rotate(2deg);
+    }
+    75% {
+        transform: translateX(-5px) translateY(-5px) rotate(-2deg);
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item a, .contact-item span {
+    color: white;
+    text-decoration: none;
+}
